@@ -13,6 +13,9 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        system: ['-apple-system', 'BlinkMacSystemFont', 'SF Pro Display', 'SF Pro Text', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -46,6 +49,12 @@ export default {
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
+        },
+        ios: {
+          blue: "hsl(var(--ios-blue))",
+          gray: "hsl(var(--ios-gray))",
+          text: "hsl(var(--ios-text))",
+          secondary: "hsl(var(--ios-secondary))",
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
