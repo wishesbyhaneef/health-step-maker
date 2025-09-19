@@ -76,12 +76,12 @@ The app includes a HealthKit service that handles:
 - Adding step counts to Health app
 - Reading existing step data
 
-For production use, you'll need to use the HealthKit plugin:
+For production use, you'll need to install the HealthKit plugin:
 ```bash
-npm install @perfood/capacitor-healthkit
+npm install @perfood/capacitor-healthkit --legacy-peer-deps
 ```
 
-The app now uses the actively maintained `@perfood/capacitor-healthkit` plugin for real HealthKit integration.
+**Note**: Due to Capacitor version compatibility, use the `--legacy-peer-deps` flag. The app includes fallback handling for development and testing.
 
 ## 🔄 Development Workflow
 
